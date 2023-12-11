@@ -1,5 +1,11 @@
 # Changelog
 
+## \[0.5.0]
+
+- [`cb393bf`](https://www.github.com/tauri-apps/tauri-action/commit/cb393bfe3b4fb834693989499769ff8fc24ada26)([#611](https://www.github.com/tauri-apps/tauri-action/pull/611)) **Breaking:** The action no longer supports `vue-cli-plugin-tauri` since it was deprecated like `vue-cli` itself. Please migrate to `@tauri-apps/cli`.
+- [`b87a544`](https://www.github.com/tauri-apps/tauri-action/commit/b87a544c7a8ad25f6ff41f0a4a20b8f711056008)([#626](https://www.github.com/tauri-apps/tauri-action/pull/626)) The action now correctly handles glob patterns in the workspace.members config (example: `members = ["bin/*"]`).
+- [`b862ca0`](https://www.github.com/tauri-apps/tauri-action/commit/b862ca088ab308dee6bf035f4003f1f446e11438)([#602](https://www.github.com/tauri-apps/tauri-action/pull/602)) **Breaking:** The action no longer tries to read a package.json file for the app name and version when initializing a tauri app. Use the `appName` and `appVersion` input arguments or the `--config` flag.
+
 ## \[0.4.5]
 
 - [`2b7cd25`](https://www.github.com/tauri-apps/tauri-action/commit/2b7cd25a7d13b4d3bb90a8b0d4423686466120d4)([#598](https://www.github.com/tauri-apps/tauri-action/pull/598)) Fix path resolution for `build.target-dir` if the `.cargo` folder is not in the current working dir.
